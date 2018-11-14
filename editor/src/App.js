@@ -23,6 +23,14 @@ class App extends Component {
     console: ''
   }
 
+  componentDidMount() {
+    console.log()
+  }
+
+  handleConsoleLog = () => {
+
+  }
+
   handleChange = code => this.setState({ code });
 
   handleRunJS = () => {
@@ -56,17 +64,17 @@ class App extends Component {
           </Col>
           <Col sm="6">
             <Button onClick={this.handleRunJS} color="primary">Run JS</Button>
-            <div className="console">
+            {/*<div className="console">
               {this.state.console}
-            </div>
-            {/*<Terminal
+            </div>*/}
+            <Terminal
               watchConsoleLogging
               hideTopBar
               color='green'
               backgroundColor='black'
               barColor='black'
               style={{ fontWeight: "bold", fontSize: "12px", height: "200px" }}
-            />*/}
+            />
           </Col>
         </Row>
       </Container>

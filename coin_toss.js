@@ -8,7 +8,7 @@ let score = 0
 
 while(!gameEnded && !userQuit) {
   const coin = tossCoin()
-  const guess = window.prompt("Score: " + score + "\nHeads or tails?")
+  const guess = window.prompt(`Score: ${score}\nHeads or tails?`)
   if (guess !== coin) {
     gameEnded = true
   }

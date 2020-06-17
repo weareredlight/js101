@@ -11,10 +11,12 @@ const doubledNumbers = numbers.map(double);
 
 // Sample map implementation
 
-function map(callback, array) {
+function map(array, callback) {
   const newArr = [];
   for (let i = 0; i < array.length; i++) {
     newArr.push(callback(array[i]));
   }
   return newArr;
 }
+
+// map([2, 4, 6, 8, 10], v => v * 2)

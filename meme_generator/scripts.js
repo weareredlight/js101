@@ -13,7 +13,6 @@ window.addEventListener('load', function() {
 
     } else {
       const file = curFiles[0];
-      var image = document.createElement('img');
       imageEl.src = window.URL.createObjectURL(file);
     }
   }
